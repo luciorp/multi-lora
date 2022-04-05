@@ -1,5 +1,20 @@
 #Multi-lora mesh network 
 
+#Design
+
+
+#Characteristics
+
+#Main dependencies
+
+#First steps
+
+#Build and installation
+
+#How to Test
+
+#Main results
+
 ![alt text](https://github.com/luciorp/multi-lora/blob/main/img/sensor.png)
 
 
