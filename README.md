@@ -16,6 +16,10 @@ The Multi-LoRa architecture provides a reference model for implementing multi-ra
 
 ## Multi-LoRa Prototype
 
+<p align="justify">
+We developed a hardware prototype for physically implementing the Multi-LoRa architecture consists of hardware and software implementation, as shown in figure below. Each node shares the same hardware structure and main firmware. In terms of hardware implementation, each node is composed of an Espressif Esp32 microcontroller (dual-core 32-bit LX6 microprocessor, operating at 240 MHz and performing at up to 600 DMIPS, Ultra-Low-Power co-processor, 520 KB SRAM, 448 KB ROM), two LoRa radios SX1276, and energy source with a capacity of 2100 mAh. We implemented the MAC, routing, and application layer protocols on device firmware using the C programming language in software implementation. Specifically, we implemented the LBT communication model at the MAC layer, the Babel routing protocol (RFC8966) at the network layer, and Modbus at the application layer. 
+</p>
+
 <p align="center">
     <img src="img/sensor.png" height="300"/> 
 </p>
