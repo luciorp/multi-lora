@@ -1,12 +1,12 @@
-## Multi-LoRa mesh network 
+## Multi-LoRa
 
 ## Multi-LoRa Architecture
 
 <p align="center">
-    <img src="img/arch.png" height="300"/> 
+    <img src="img/arch.png" height="500"/> 
 </p>
 
-## Prototype
+## Multi-LoRa Prototype
 
 <p align="center">
     <img src="img/sensor.png" height="300"/> 
