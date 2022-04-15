@@ -54,4 +54,12 @@ ESP-IDF that essentially contains API (software libraries and source code) for E
 <p align="justify">
 We evaluated the Multi-LoRa prototype considering two approaches: a small-scale based on a physical testbed and a large-scale using an simulation environment. The testbed results are investigated to calibrate the simulation experiments and analyze the performance of Multi-LoRa in real experiments. Moreover, the simulation experiments evaluated Multi-LoRa concerning delay and data delivery in a large-scale scenario. Furthermore, it is necessary to highlight that our simulation used the same source code prototyped in the testbed.
 </p>
+    
+    
+<p align="justify">
+Figure below shows Average Packet Delay (APD) for several IoT nodes considering three Multi-LoRa setups in the simulation environment. The APD results for large scale-scenario show that Setup 3 provides APD 61.5% and 26% lower than Setup 1 and Setup 2. This behavior happens because Setup 3 considers a multi-radio transmission with a better radio configuration (i.e., BW and SF values). For instance, the packet with a payload of 128 bytes transmitted with SF 7 and BW of 125 kHz has a ToA value of 332.03 ms, while SF 7 and BW of 250 kHz has a ToA average value of 166.02 ms. This result explains the reason for the APD performance of Multi-LoRa - Setup 3 is 50% better than Setup 2. Finally, Setup 2 provides APD results in 75% better than Setup 1 since Setup 2 considers two LoRa radios for transmitting data, reducing the effects of a half-duplex nature of the LoRa radio.
+</p>
 
+<p align="center">
+    <img src="img/Simulation.png" height="300"/> 
+</p>
