@@ -1,9 +1,13 @@
 ## Multi-LoRa
 
+<p align="justify">
+Multi-LoRa is a multi-radio and multi-hop LoRa communication architecture to increase the coverage and service for large-scale IoT deployment in rural areas. In this case, Multi-LoRa provides a reference for implementing communication networks based on the physical layer LoRa.
+</p>
+
 ## Multi-LoRa Architecture
 
 <p align="center">
-    <img src="img/arch.png" height="500"/> 
+    <img src="img/arch.png" height="600"/> 
 </p>
 
 ## Multi-LoRa Prototype
