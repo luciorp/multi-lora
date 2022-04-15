@@ -6,6 +6,10 @@ Agriculture plays vital importance in developing an agricultural country, where 
 
 ## Multi-LoRa Architecture
 
+<p align="justify">
+The Multi-LoRa architecture provides a reference model for implementing multi-radio and multi-hop LoRa communication for large-scale IoT deployment in rural areas. Multi-LoRa architecture consists of four layers: Physical, MAC, Network, and Application, as shown the figure below. Specifically, the Physical layer considers the LoRa® radio provided by Semtech. For upper layers, there are some expected features. For instance, the MAC layer must ensure an efficient  transmission scheme over multiple radios. Furthermore, the Network layer is responsible for forwarding the routing data to route the data with lower signaling overhead and half-duplex communication. Finally, IoT applications can be built at the Application layer. In the following, we describe each layer of our architecture.
+</p>
+
 <p align="center">
     <img src="img/arch.png" height="600"/> 
 </p>
