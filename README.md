@@ -16,6 +16,9 @@
 
 ![alt text](https://github.com/luciorp/multi-lora/blob/main/img/sensor.png)
 
+<p align="center">
+    <img src="img/sensor.png" height="300"/> 
+</p>
 
 What You Need
 Hardware:
