@@ -1,4 +1,4 @@
-## Multi-LoRa
+## Multi-LoRa - Multi-radio and Multi-hop LoRa Communication Architecture for Large Scale IoT Deployment
 
 <p align="justify">
 Agriculture plays vital importance in developing an agricultural country, where rural modernization emerges as a solution to improve farming, field, and producers' issues. Multi-LoRa is a multi-radio and multi-hop LoRa communication architecture to increase the coverage and service for large-scale IoT deployment in rural areas. In this case, Multi-LoRa provides a reference for implementing communication networks based on the physical layer LoRa.
