@@ -39,12 +39,19 @@ ESP-IDF that essentially contains API (software libraries and source code) for E
 
 ## First steps
 
+<!-- Essa é a parte que o revisor quer ver-->
+
 ## Build and installation
+
+<!-- Essa é a parte que o revisor quer ver-->
 
 ## How to Test
 
+<!-- Essa é a parte que o revisor quer ver-->
+
 ## Main results
 
-
-
+<p align="justify">
+We evaluated the Multi-LoRa prototype considering two approaches: a small-scale based on a physical testbed and a large-scale using an simulation environment. The testbed results are investigated to calibrate the simulation experiments and analyze the performance of Multi-LoRa in real experiments. Moreover, the simulation experiments evaluated Multi-LoRa concerning delay and data delivery in a large-scale scenario. Furthermore, it is necessary to highlight that our simulation used the same source code prototyped in the testbed.
+</p>
 
