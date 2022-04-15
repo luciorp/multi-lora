@@ -70,3 +70,13 @@ Figure below shows APD for several IoT nodes considering three Multi-LoRa setups
 <p align="center">
     <img src="img/Simulation.png" height="300"/> 
 </p>
+
+## How to cite
+
+<!--```
+@article{prade2022Multi-LoRa,
+    title={Multi-radio and Multi-hop LoRa Communication Architecture for Large Scale IoT Deployment},
+    author={Lúcio Rene Prade and Jean Moraes and Eliel de Albuquerque and Denis Rosário and Cristiano Bonato Both},
+    year={2022}
+}
+-->
