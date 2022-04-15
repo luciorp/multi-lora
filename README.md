@@ -1,12 +1,16 @@
-## Multi-lora mesh network 
+## Multi-LoRa mesh network 
 
-## Design
+## Multi-LoRa Architecture
 
 <p align="center">
     <img src="img/arch.png" height="300"/> 
 </p>
 
-## Characteristics
+## Prototype
+
+<p align="center">
+    <img src="img/sensor.png" height="300"/> 
+</p>
 
 ## Main dependencies
 
@@ -19,9 +23,6 @@
 ## Main results
 
 
-<p align="center">
-    <img src="img/sensor.png" height="300"/> 
-</p>
 
 What You Need
 Hardware:
