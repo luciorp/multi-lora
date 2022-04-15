@@ -3,7 +3,7 @@
 ## Design
 
 <p align="center">
-    <img src="img/arch.pdf" height="300"/> 
+    <img src="img/arch.png" height="300"/> 
 </p>
 
 ## Characteristics
