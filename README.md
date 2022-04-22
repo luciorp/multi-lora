@@ -118,7 +118,7 @@ idf.py -p PORT [-b BAUD] flash
 ```
 Replace PORT with your ESP32 board’s serial port name.
 
-## How to test
+### How to test
 
 When flashing firmware in prototype, you will see the output log similar to the following:
 ```
@@ -159,7 +159,12 @@ Done
 ```
 
 To check if multi-lora firmware is indeed running, type idf.py -p PORT monitor (replace PORT with your serial port name).
-the firmware's default configuration generates random traffic to all nodes in route table. 
+The firmware's default configuration generates random traffic to all nodes in route table. 
+
+<p align="center">
+    <img src="img/learning.png" height="300"/> 
+</p>
+
 
 
 <!-- Essa é a parte que o revisor quer ver-->
@@ -172,7 +177,7 @@ the firmware's default configuration generates random traffic to all nodes in ro
 
 <!-- Essa é a parte que o revisor quer ver-->
 
-## How to test
+### How to test
 
 <!-- Essa é a parte que o revisor quer ver-->
 
