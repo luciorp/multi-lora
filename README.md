@@ -57,8 +57,9 @@ You need to install some software packages on Debian Linux to use the ESP-IDF cr
 ```
 sudo apt-get install git wget flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0
 ```
+<p align="justify">
 2 - You need the software libraries provided by Espressif in the ESP-IDF repository to build applications for the prototype.  To get ESP-IDF, navigate to your installation directory and clone the repository with git clone, following instructions.
-
+</p>
 Open Terminal and run the following commands:
 ```
 mkdir -p ~/esp
