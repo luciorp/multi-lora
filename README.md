@@ -156,12 +156,12 @@ Leaving...
 Hard resetting via RTS pin...
 Done
 ```
-<p align="center">
+<p align="justify">
 To check if Multi-LoRa firmware is indeed running, type idf.py -p PORT monitor (replace PORT with your serial port name).
 The firmware's default configuration generates random traffic to all nodes in the routing table. 
 </p>
 <p align="center">
-    <img src="img/learning.png" height="150"/> 
+    <img src="img/learning.png" height="100"/> 
 </p>
 
 
@@ -219,7 +219,7 @@ pktID, srcAddre, destAddr, startTime, dataPayload
   3,      10,       50,        6000,      AABBCCDDEEFF112233445566778899ABCDEFABCDEF
 
 ```
-<p align="center">
+<p align="justify">
 You must have the firmware compiled to start the simulation.
 The simulator will launch Linux processes with the binary compiled from the firmware.
 It also emulates the physical medium, indicating the airtime of each packet and indicating which nodes are in range to send, based on the topology.csv file.
