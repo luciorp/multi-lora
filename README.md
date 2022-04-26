@@ -72,7 +72,7 @@ cd ~/esp/esp-idf
 ./install.sh esp32
 ```
 
-4 - TThe installed tools are not added to the PATH environment variable yet. You must set some environment variables to make the tools usable from the command line. ESP-IDF provides a script that does that.
+4 - The installed tools are not added to the PATH environment variable yet. You must set some environment variables to make the tools usable from the command line. ESP-IDF provides a script that does that.
 
 In the terminal where you are going to use ESP-IDF, run:
 ```
@@ -156,12 +156,12 @@ Leaving...
 Hard resetting via RTS pin...
 Done
 ```
-
+<p align="center">
 To check if Multi-LoRa firmware is indeed running, type idf.py -p PORT monitor (replace PORT with your serial port name).
 The firmware's default configuration generates random traffic to all nodes in the routing table. 
-
+</p>
 <p align="center">
-    <img src="img/learning.png" height="200"/> 
+    <img src="img/learning.png" height="150"/> 
 </p>
 
 
@@ -219,11 +219,12 @@ pktID, srcAddre, destAddr, startTime, dataPayload
   3,      10,       50,        6000,      AABBCCDDEEFF112233445566778899ABCDEFABCDEF
 
 ```
+<p align="center">
 You must have the firmware compiled to start the simulation.
 The simulator will launch Linux processes with the binary compiled from the firmware.
 It also emulates the physical medium, indicating the airtime of each packet and indicating which nodes are in range to send, based on the topology.csv file.
 Each simulation cycle is equivalent to 1 ms and based on that time, the packets listed in the packets.csv file are sent.
-
+</p>
 Start simulation.
 
 ```
