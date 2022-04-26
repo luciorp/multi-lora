@@ -26,7 +26,7 @@ We developed a hardware prototype for physically implementing the Multi-LoRa arc
 
 ## Main dependencies
 
-### The minimum hardware requirement and software to run this experiment in bare metal (microcontroller) is shown in the image below.
+### The minimum hardware requirement and software to run this experiment in bare metal (microcontroller) is shown  below.
 Hardware:
 - 4 Heltech Wireless Stick Lite (ESP32+SX1272) board
 - 4 SX1276 module
@@ -37,7 +37,7 @@ Hardware:
 Software:
 - ESP-IDF that essentially contains API (software libraries and source code) for ESP32 and scripts to operate the Toolchain
 
-### The minimum hardware requirement and software to run this experiment in simulation mode is shown in the image below.
+### The minimum hardware requirement and software to run this experiment in simulation mode is shown below.
 Hardware:
 - Computer with 32GB RAM running Debian Linux
 
@@ -49,7 +49,7 @@ Software:
 ## First steps Hardware Prototype
 
 <!-- Essa é a parte que o revisor quer ver-->
-In order to use ESP-IDF with the Hardware prototype, you need to install some software packages on Debian Linux.
+In order to use ESP-IDF crosscompiler with the Hardware prototype, you need to install some software packages on Debian Linux.
 
 ### Build and installation
 
@@ -167,19 +167,79 @@ The firmware's default configuration generates random traffic to all nodes in ro
 
 
 
-<!-- Essa é a parte que o revisor quer ver-->
-
 ## First steps Simulation
 
-<!-- Essa é a parte que o revisor quer ver-->
+In order to use simulatore, you need to install some software packages on Debian Linux. Make, gcc and python 3 with their libraries
 
 ### Build and installation
 
-<!-- Essa é a parte que o revisor quer ver-->
+Install  gcc compiler and make to compile firmware on x86_64 architecture and make simulation possible
+```
+sudo apt-get -y install make build-essential
+```
+Install the python interpreter to run the mesh network simulator
+```
+sudo apt install -y python3 python3-pip libssl-dev libffi-dev python3-dev python3-venv
+```
+Now you are ready to prepare your emulation/simulation. You can start clone te project.
+```
+  git clone https://github.com/luciorp/multi-lora.git
+  
+  cd multi-lora/simulator
+```
+Build the firmware to emulate on x86_64 architecture by running make all  inside the folder multi-lora/simulator/mac_sim
 
+Back to the multi-lora/simulator/ folder and install the necessary libraries to run the python simulator
+```
+pip3 install -r requirements.txt
+```
 ### How to test
 
-<!-- Essa é a parte que o revisor quer ver-->
+In order to run the python simulator, we need to configure the topology.csv file with the distribution of nodes in space.
+
+```
+NodeId,Xcoord,Ycoord,Address
+nodeA,   0,     0,    10
+nodeB,   0,     4,    20
+nodeC,   0,     8,    30
+nodeD,   4,     0,    40
+nodeE,   4,     4,    50
+nodeF,   4,     8,    60
+nodeG,   8,     0,    70
+nodeH,   8,     4,    80
+nodeI,   8,     8,    90
+```
+
+Configure the packets.csv file to indicate the packets to be sent with the source node address, destination node address, payload (hexadecimal) 
+and the time in ms when the packet starts to be sent
+
+```
+pktID, srcAddre, destAddr, startTime, dataPayload
+  1,      10,       90,        10,        AABBCCDDEEFF112233445566778899
+  2,      10,       80,        3000,      AABBCCDDEEFF112233
+  3,      10,       50,        6000,      AABBCCDDEEFF112233445566778899ABCDEFABCDEF
+
+```
+In order to start the simulation, you must have the firmware compiled.
+The simulator will launch linux processes with the binary compiled from the firmware.
+It will also emulate the physical medium, indicating the airtime of each packet and indicating which nodes are in range to send,based on the topology.csv file.
+Each simulation cycle is equivalent to 1 ms and based on that time, the packets listed in the packets.csv file will be sent.
+
+Start simulation.
+
+```
+python3 simulator.py
+```
+
+At the end of the simulation process, the results will be listed in the results.csv file
+
+```
+pktID, srcAddre, destAddr, totalTime, timeout, dataError
+  1,      10,       90,        63,       0,      0
+  2,      10,       80,        42,       0,      0
+  3,      10,       50,        87,       0,      0
+
+```
 
 ## Main results
 
