@@ -1,0 +1,10 @@
+NodeId,Xcoord,Ycoord,Address
+nodeA,0,0,10
+nodeB,0,4,20
+nodeC,0,8,30
+nodeD,4,0,40
+nodeE,4,4,50
+nodeF,4,8,60
+nodeG,8,0,70
+nodeH,8,4,80
+nodeI,8,8,90
