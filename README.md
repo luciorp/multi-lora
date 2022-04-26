@@ -161,7 +161,7 @@ To check if Multi-LoRa firmware is indeed running, type idf.py -p PORT monitor (
 The firmware's default configuration generates random traffic to all nodes in the routing table. 
 </p>
 <p align="center">
-    <img src="img/learning.png" height="100"/> 
+    <img src="img/learning.png" height="200"/> 
 </p>
 
 
