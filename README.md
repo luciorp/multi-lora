@@ -265,14 +265,15 @@ The figure below shows APD for several IoT nodes considering three Multi-LoRa se
 
 ## How to cite
 
+```
 @article{PRADE2022108242,
-author = {Lucio Prade and Jean Moraes and Eliel {de Albuquerque} and Denis Rosário and Cristiano Bonato Both},
-title = {Multi-radio and multi-hop LoRa communication architecture for large scale IoT deployment},
-journal = {Computers and Electrical Engineering},
-volume = {102},
-pages = {108242},
-year = {2022},
-issn = {0045-7906},
-doi = {https://doi.org/10.1016/j.compeleceng.2022.108242}.
+    author = {Lucio Prade and Jean Moraes and Eliel {de Albuquerque} and Denis Rosário and Cristiano Bonato Both},
+    title = {Multi-radio and multi-hop LoRa communication architecture for large scale IoT deployment},
+    journal = {Computers and Electrical Engineering},
+    volume = {102},
+    pages = {108242},
+    year = {2022},
+    issn = {0045-7906},
+    doi = {https://doi.org/10.1016/j.compeleceng.2022.108242}.
 }
-
+```
